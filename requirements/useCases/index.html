@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Textbook - Use Cases</title>
-    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
 </head>
 <body>
 <div id="app" class="container-fluid">
@@ -254,8 +254,8 @@
                       <question has-input="false">
                         <p>Consider a simple movie ticket vending machine application. Every week, the theatre staff will enter the weekly schedule as well as ticket price for each show. A customer sees the schedule and the ticket price displayed at the
                           machine. There is a slot to insert money, a keypad to enter a code for a movie, a code for the show time, and the number of tickets. A display shows the customer's balance inside the machine. A customer may choose to cancel a
-                          transaction before pressing the “buy” button. Printed tickets can be collected from a slot at the bottom of the machine. The machine also displays messages such as "Please enter more money”, “Request fewer tickets" or "SOLD OUT!”.
-                          Finally, a "Return Change" button allows the customer to get back his unspent money.</p>
+                          transaction before pressing the “buy” button. Printed tickets can be collected from a slot at the bottom of the machine. The machine also displays messages such as &quot;Please enter more money”, “Request fewer tickets&quot;
+                          or &quot;SOLD OUT!”. Finally, a &quot;Return Change&quot; button allows the customer to get back his unspent money.</p>
                         <p><strong>Draw a use case diagram for the above requirements.</strong></p>
                         <div slot="answer"><img src="/se-book/requirements/useCases/identification/images/TicketMachine.jpg" height="250">
                           <p></p>
@@ -358,64 +358,80 @@ Actors: Player (multiple players)
           </div>
           <p><strong>Main success scenario</strong></p>
           <div>
+            <link rel="stylesheet" href="/se-book/css/useCases.css">
             <p>The Main Success Scenario (MSS) describes the most straightforward interaction for a given use case, which assumes that nothing goes wrong. This is also called the <em>Basic Course of Action</em> or the <em>Main Flow of Events</em> of a use
               case. Given below is another example of an MSS.</p>
             <tip-box>
-              <pre class="hljs"><code>System: Online Banking System (OBS)
-<span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span>: UC23 - Transfer Money
-Actor: <span class="hljs-keyword">User</span>
-MSS:
-	<span class="hljs-number">1.</span> <span class="hljs-keyword">User</span> chooses <span class="hljs-keyword">to</span> transfer money.
-	<span class="hljs-number">2.</span> OBS requests <span class="hljs-keyword">for</span> details <span class="hljs-keyword">of</span> the transfer.
-	<span class="hljs-number">3.</span> <span class="hljs-keyword">User</span> enters the requested details.
-	<span class="hljs-number">4.</span> OBS requests <span class="hljs-keyword">for</span> confirmation.
-	<span class="hljs-number">5.</span> <span class="hljs-keyword">User</span> confirms transfer.
-	<span class="hljs-number">6.</span> OBS transfers the money <span class="hljs-keyword">and</span> displays the <span class="hljs-keyword">new</span> <span class="hljs-keyword">account</span> balance.
-         <span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span> ends.
-
-Extensions:
-	<span class="hljs-number">3</span>a. OBS detects an <span class="hljs-keyword">error</span> <span class="hljs-keyword">in</span> the entered data.
-		<span class="hljs-number">3</span>a1. OBS requests <span class="hljs-keyword">for</span> the correct data.
-		<span class="hljs-number">3</span>a2. <span class="hljs-keyword">User</span> enters <span class="hljs-keyword">new</span> data.
-	Steps <span class="hljs-number">3</span>a1<span class="hljs-number">-3</span>a2 <span class="hljs-keyword">are</span> repeated <span class="hljs-keyword">until</span> the <span class="hljs-keyword">data</span> entered <span class="hljs-keyword">are</span> correct.
-	<span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span> resumes <span class="hljs-keyword">from</span> step <span class="hljs-number">4.</span>
-
-	<span class="hljs-number">3</span>b. <span class="hljs-keyword">User</span> requests <span class="hljs-keyword">to</span> effect the transfer <span class="hljs-keyword">in</span> a future date.
-    		<span class="hljs-number">3</span>b1. OBS requests <span class="hljs-keyword">for</span> confirmation.
-    		<span class="hljs-number">3</span>b2. <span class="hljs-keyword">User</span> confirms future transfer.
-    		<span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span> ends.
-
- 	*a. <span class="hljs-keyword">At</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">time</span>, <span class="hljs-keyword">User</span> chooses <span class="hljs-keyword">to</span> <span class="hljs-keyword">cancel</span> the transfer
-		*a1. OBS requests <span class="hljs-keyword">to</span> <span class="hljs-keyword">confirm</span> the cancellation
-		*a2. <span class="hljs-keyword">User</span> confirms the cancellation
-		<span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span> ends.
-
-	*b. <span class="hljs-keyword">At</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">time</span>, <span class="hljs-number">120</span> seconds lapse <span class="hljs-keyword">without</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">input</span> <span class="hljs-keyword">from</span> the <span class="hljs-keyword">User</span>
-		*b1. OBS cancels the transfer
-		*b2. OBS informs the <span class="hljs-keyword">User</span> <span class="hljs-keyword">of</span> the cancellation
-		<span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span> ends.
-
-</code></pre>
+              <div>
+                <ul>
+                  <li>System: Online Banking System (OBS)</li>
+                  <li> Use case: UC23 - Transfer Money </li>
+                  <li> Actor: User </li>
+                  <li> MSS:
+                    <ol>
+                      <li>User chooses to transfer money.</li>
+                      <li>OBS requests for details of the transfer.</li>
+                      <li>User enters the requested details.</li>
+                      <li>OBS requests for confirmation.</li>
+                      <li>OBS transfers the money and displays the new account balance.</li>
+                      <li class="custom-bullet-point">Use case ends.</li>
+                    </ol>
+                  </li>
+                  <li> Extensions:
+                    <ol class="custom-bullet-list">
+                      <li>3a. OBS detects an error in the entered data.
+                        <ol class="custom-bullet-list">
+                          <li>3a1. OBS requests for the correct data.</li>
+                          <li>3a2. User enters new data.</li>
+                          <li>Steps 3a1-3a2 are repeated until the data entered are correct.</li>
+                          <li>Use case resumes from step 4.</li>
+                        </ol>
+                      </li>
+                      <li>3b. User requests to effect the transfer in a future date.
+                        <ol class="custom-bullet-list">
+                          <li>3b1. OBS requests for confirmation.</li>
+                          <li>3b2. User confirms future transfer.</li>
+                          <li>Use case ends.</li>
+                        </ol>
+                      </li>
+                      <li>*a. At any time, User chooses to cancel the transfer.
+                        <ol class="custom-bullet-list">
+                          <li>*a1. OBS requests to confirm the cancellation.</li>
+                          <li>*a2. User confirms the cancellation.</li>
+                          <li>Use case ends.</li>
+                        </ol>
+                      </li>
+                      <li>*b. At any time, 120 seconds lapse without any input from the User.
+                        <ol class="custom-bullet-list">
+                          <li>*b1. OBS cancels the transfer.</li>
+                          <li>*b2. OBS informs the User of the cancellation.</li>
+                          <li>Use case ends.</li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                </ul>
+              </div>
               <p>Note how the MSS assumes that all entered details are correct and ignores problems such as timeouts, network outages etc. MSS does not tell us what happens if the user enters incorrect data.</p>
             </tip-box>
           </div>
           <p><strong>Extensions</strong></p>
           <div>
-            <p><em>Extensions</em>, given below the MSS, are "add-on"s to the MSS. They are also called <em>exceptional flow of events</em> or <em>alternative flow of events</em>. They describe variations of the scenario that can happen if certain things
-              are not as expected by the MSS. Extensions appear below the MSS. Note that the numbering style is not a rule but just a convention. The third extension, labeled as ‘*a’ can happen at any step (hence, the ‘*’).</p>
+            <p><em>Extensions</em>, given below the MSS, are &quot;add-on&quot;s to the MSS. They are also called <em>exceptional flow of events</em> or <em>alternative flow of events</em>. They describe variations of the scenario that can happen if certain
+              things are not as expected by the MSS. Extensions appear below the MSS. Note that the numbering style is not a rule but just a convention. The third extension, labeled as ‘*a’ can happen at any step (hence, the ‘*’).</p>
             <p>When separating extensions from the MSS, keep in mind that the MSS should be self-contained. That is, the MSS should give us a complete usage scenario. Also note that it is not useful to mention events such as power failures or system crashes
               as extensions because the system cannot function beyond such catastrophic failures.</p><img src="/se-book/requirements/useCases/details/images/Extension.jpg" height="250">
             <p></p>
-            <p><code><< extend >></code> relationship between use cases is used to capture extensions to the use cases. Note how the arrow is pointing the other way.</p>
+            <p><code>&lt;&lt; extend &gt;&gt;</code> relationship between use cases is used to capture extensions to the use cases. Note how the arrow is pointing the other way.</p>
           </div>
           <p><strong>Inclusions</strong></p>
           <div>
-            <p>A use case can "include" another use case. Underlined text is commonly used to show an inclusion of a use case. Inclusions are useful,</p>
+            <p>A use case can &quot;include&quot; another use case. Underlined text is commonly used to show an inclusion of a use case. Inclusions are useful,</p>
             <ul>
               <li>When you don't want to clutter a use case with too many low-level steps.</li>
               <li>When a set of steps is repeated in multiple use cases.</li>
             </ul>
-            <p>We use a dotted arrow and a <code><< include >></code> annotation to show use case inclusions in a use case diagram.</p><img src="/se-book/requirements/useCases/details/images/Inclusion.jpg" height="250">
+            <p>We use a dotted arrow and a <code>&lt;&lt; include &gt;&gt;</code> annotation to show use case inclusions in a use case diagram.</p><img src="/se-book/requirements/useCases/details/images/Inclusion.jpg" height="250">
             <p></p>
           </div>
           <p><strong>Use case preconditions</strong></p>
@@ -467,7 +483,7 @@ Actor: EZ-<span class="hljs-keyword">Link</span> card <span class="hljs-keyword"
 <span class="hljs-keyword">Use</span> <span class="hljs-keyword">case</span>: UC2 top-up EZ-<span class="hljs-keyword">Link</span> card
 Actor: EZ-<span class="hljs-keyword">Link</span> card <span class="hljs-keyword">user</span>
 Preconditions: All hardware <span class="hljs-keyword">in</span> working order.
-Guarantees:  MSS -> the card will be topped-up.
+Guarantees:  MSS -&gt; the card will be topped-up.
 MSS:
 	<span class="hljs-number">1.</span> <span class="hljs-keyword">User</span> places the card <span class="hljs-keyword">on</span> the reader.
 	<span class="hljs-number">2.</span> <span class="hljs-keyword">System</span> displays card details <span class="hljs-keyword">and</span> prompts <span class="hljs-keyword">for</span> desired action.
@@ -533,7 +549,7 @@ Actor: Student
 Use <span class="hljs-keyword">case</span>: UC01 reply <span class="hljs-built_in">to</span> <span class="hljs-built_in">post</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">the</span> forum
 Actor: Student
 Preconditions: Student is logged <span class="hljs-keyword">in</span> <span class="hljs-keyword">and</span> has permission <span class="hljs-built_in">to</span> <span class="hljs-built_in">post</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">the</span> forum. The <span class="hljs-built_in">post</span> <span class="hljs-built_in">to</span> which <span class="hljs-keyword">the</span> Student replies already exists.
-Guarantees: * MSS -> <span class="hljs-built_in">post</span> will be added <span class="hljs-built_in">to</span> <span class="hljs-keyword">the</span> forum.
+Guarantees: * MSS -&gt; <span class="hljs-built_in">post</span> will be added <span class="hljs-built_in">to</span> <span class="hljs-keyword">the</span> forum.
 MSS:
 	<span class="hljs-number">1.</span> Student chooses <span class="hljs-built_in">to</span> reply <span class="hljs-built_in">to</span> <span class="hljs-keyword">an</span> existing <span class="hljs-built_in">post</span>.
 	<span class="hljs-number">2.</span> LearnSys requests <span class="hljs-keyword">the</span> user <span class="hljs-built_in">to</span> enter <span class="hljs-built_in">post</span> details.
@@ -622,7 +638,7 @@ Extensions:
 </div>
 </div>
 </body>
-<script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/vue-strap.min.js"></script>
-<script src="../../markbind/js/setup.js"></script>
+<script src="..\..\markbind\js\vue.min.js"></script>
+<script src="..\..\markbind\js\vue-strap.min.js"></script>
+<script src="..\..\markbind\js\setup.js"></script>
 </html>
