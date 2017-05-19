@@ -6,9 +6,9 @@ The Main Success Scenario (MSS) describes the most straightforward interaction f
   <div>
     <ul>
       <li>System: Online Banking System (OBS)</li>
-      <li> Use case: UC23 - Transfer Money </li>
-      <li> Actor: User </li>
-      <li> MSS:
+      <li>Use case: UC23 - Transfer Money</li>
+      <li>Actor: User</li>
+      <li>MSS:
         <ol>
           <li>User chooses to transfer money.</li>
           <li>OBS requests for details of the transfer.</li>
