@@ -6,20 +6,20 @@
 
 <div id="main">
 
-<img src="{{baseUrl}}/uml/classes/introduction/images/BasicNotation.jpg" height="100" />
+<img src="{{baseUrl}}/uml/classes/introduction/images/BasicNotation.png" height="100" />
 <p/>
 
 The above illustrates the basic notations of a class diagram: attributes represent the data of the class; methods represent the operations (or behavior).
 
-<img src="{{baseUrl}}/uml/classes/introduction/images/Operations.jpg" height="150" />
+<img src="{{baseUrl}}/uml/classes/introduction/images/Operations.png" height="150" />
 <p/>
 
 The ‘Operations’ compartment (or even both ‘Attributes’ and ‘Operations’ compartments) may be omitted if such details are not important for the task at hand.
 
-<img src="{{baseUrl}}/uml/classes/introduction/images/Classes.jpg" height="100" />
+<img src="{{baseUrl}}/uml/classes/introduction/images/Classes.png" height="100" />
 <p/>
 
-<img src="{{baseUrl}}/uml/classes/introduction/images/OperationsVisibility.jpg" height="150" />
+<img src="{{baseUrl}}/uml/classes/introduction/images/OperationsVisibility.png" height="150" />
 <p/>
 
 The _visibility_ of attributes and operations is used to indicate the level of access allowed for each attribute or operation. The types of visibility and their exact meanings depend on the programming language used. Here are some common visibilities and how they are indicated in a class diagram:

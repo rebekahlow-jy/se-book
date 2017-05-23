@@ -6,7 +6,30 @@
 
 <div id="main">
 
-...
+‘Role’ labels are optionally used to indicate the role played by the classes in the association.
+
+<tip-box>
+
+Example:
+
+<img src="{{baseUrl}}/uml/associations/roles/images/HusbandWife.png" height="70" />
+<p/>
+
+This association represents a marriage between a Man object and a Woman object. The respective roles played by objects of these two classes are husband and wife.
+
+</tip-box>
+
+<tip-box>
+
+Example:
+
+<img src="{{baseUrl}}/uml/associations/roles/images/AdminStudent.png" height="70" />
+<p/>
+
+</tip-box>
+
+<img src="{{baseUrl}}/uml/associations/roles/images/Association.png" height="120" />
+<p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 

@@ -1,4 +1,4 @@
-#### Multiplicity  :one:
+#### Multiplicity :two:
 
 <tip-box type="success">
   <include src="./outcomes.md" />

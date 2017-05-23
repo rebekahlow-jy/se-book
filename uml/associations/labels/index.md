@@ -6,7 +6,21 @@
 
 <div id="main">
 
-...
+_Association labels_ describe the association. The arrow head indicates the “direction” in which the label is to be read.
+
+<tip-box>
+
+Example:
+
+<img src="{{baseUrl}}/uml/associations/labels/images/AdminStudent.png" height="70" />
+<p/>
+
+an Admin object uses Student objects” or “Student objects are used by an Admin object”.
+
+</tip-box>
+
+<img src="{{baseUrl}}/uml/associations/labels/images/Association.png" height="70" />
+<p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 
