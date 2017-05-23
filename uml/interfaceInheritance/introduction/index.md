@@ -6,9 +6,9 @@
 
 <div id="main">
 
-We use the keyword `<<interface>>` to indicate an interface. Interface inheritance is shown similar to class inheritance except a dashed line is used instead of a solid line.
+We use the keyword `<< interface >>` to indicate an interface. Interface inheritance is shown similar to class inheritance except a dashed line is used instead of a solid line.
 
-<img src="{{baseUrl}}/uml/interfaceInheritance/introduction/images/Staff.png" height="300" />
+<img src="{{baseUrl}}/uml/interfaceInheritance/introduction/images/Staff.png" height="250" />
 <p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
