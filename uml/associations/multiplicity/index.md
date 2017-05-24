@@ -18,10 +18,7 @@ Commonly used multiplicities:
 
 In the diagram below, an Admin object administers (in charge of) any number of students but a Student object must always be under the charge of exactly one Admin object
 
-<img src="{{baseUrl}}/uml/associations/multiplicity/images/AdminStudent.png" height="100" />
-<p/>
-
-<img src="{{baseUrl}}/uml/associations/multiplicity/images/Association.png" height="120" />
+<img src="{{baseUrl}}/uml/associations/multiplicity/images/adminStudent.png" height="100" />
 <p/>
 
 Example:
@@ -29,10 +26,13 @@ Example:
 *	Students have matriculation numbers.  A Professor cannot supervise more than 5 students.
 *	Admin staff handles Professors as well.
 
-<img src="{{baseUrl}}/uml/associations/multiplicity/images/AdminProfessorStudent.png" height="70" />
+<img src="{{baseUrl}}/uml/associations/multiplicity/images/adminProfessorStudent.png" height="70" />
 <p/>
 
 </tip-box>
+
+<img src="{{baseUrl}}/uml/associations/multiplicity/images/association.png" height="120" />
+<p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 
