@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="{{baseUrl}}/css/textbook.css">
+
+<div class="website-content">
+
 ## What is Object Oriented Programming?
 
 <div id="main">
@@ -25,4 +29,5 @@ Object Oriented Programming is a widely used programming paradigm. Here is an in
 
 {mention other programming paradigms}
 
+</div>
 </div>

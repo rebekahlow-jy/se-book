@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="{{baseUrl}}/css/textbook.css">
+
+<div class="website-content">
+
 ### Associations
 
 <div id="main">
@@ -10,4 +14,5 @@
 <include src="./aggregation/topicPanel.md" />
 <include src="./associationClasses/topicPanel.md" />
 
+</div>
 </div>
