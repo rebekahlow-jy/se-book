@@ -1,4 +1,4 @@
-#### Navigability :two:
+#### Navigability :one:
 
 <tip-box type="success">
   <include src="./outcomes.md" />

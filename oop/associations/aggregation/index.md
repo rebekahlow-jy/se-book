@@ -14,7 +14,7 @@ _Aggregation_ represents a ‘container-contained’ relationship. It is a weake
 
 <p/>
 
-<img src="{{baseUrl}}/oop/associations/aggregation/images/clubPerson.png" height="50" />
+<img src="{{baseUrl}}/oop/associations/aggregation/images/clubPerson.png" height="80" />
 <p/>
 
 **Aggregation vs Composition**

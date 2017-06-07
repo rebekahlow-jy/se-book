@@ -1,4 +1,4 @@
-#### Association Classes :two:
+#### Association Classes :three:
 
 <tip-box type="success">
   <include src="./outcomes.md" />

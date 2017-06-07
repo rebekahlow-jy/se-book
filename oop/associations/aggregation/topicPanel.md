@@ -1,4 +1,4 @@
-#### Aggregation :two:
+#### Aggregation :three:
 
 <tip-box type="success">
   <include src="./outcomes.md" />

@@ -18,7 +18,7 @@ At times, there is a need to store additional information about an association. 
 
 Example:
 
-<img src="{{baseUrl}}/oop/associations/associationClasses/images/manWoman.png" height="80" />
+<img src="{{baseUrl}}/oop/associations/associationClasses/images/manWoman.png" height="120" />
 <p/>
 
 </tip-box>
