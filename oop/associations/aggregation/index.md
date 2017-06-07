@@ -6,7 +6,21 @@
 
 <div id="main">
 
-...
+_Aggregation_ represents a ‘container-contained’ relationship. It is a weaker relationship than composition.
+
+<panel header="UML: Class Diagrams: Aggregation">
+  <include src="../../../uml/classDiagrams/aggregation/topicPanel.md" />
+</panel>
+
+<p/>
+
+<img src="{{baseUrl}}/oop/associations/aggregation/images/clubPerson.png" height="50" />
+<p/>
+
+**Aggregation vs Composition**
+
+The distinction between composition and aggregation is rather blurred. Martin Fowler’s famous book _UML Distilled_ advocates omitting the aggregation symbol altogether as using it adds more confusion than clarity.
+
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 

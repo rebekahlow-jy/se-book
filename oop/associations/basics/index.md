@@ -6,7 +6,47 @@
 
 <div id="main">
 
-...
+Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such connections are called _associations_.
+
+<tip-box>
+
+Example:
+
+<img src="{{baseUrl}}/oop/associations/basics/images/completeStructure.png" height="120" />
+<p/>
+
+</tip-box>
+
+These object structures can change over time.
+
+<tip-box>
+
+Example:
+
+<img src="{{baseUrl}}/oop/associations/basics/images/ageListCalculator.png" height="100" />
+<img src="{{baseUrl}}/oop/associations/basics/images/ageListCalculatorAdam.png" height="100" />
+<p/>
+
+</tip-box>
+
+These associations can be reflected among classes too.
+
+<panel header="UML: Class Diagrams: Associations: Basics">
+  <include src="../../../uml/classDiagrams/associations/basics/topicPanel.md" />
+</panel>
+
+<panel header="UML: Class Diagrams: Associations: Labels">
+  <include src="../../../uml/classDiagrams/associations/labels/topicPanel.md" />
+</panel>
+
+<panel header="UML: Class Diagrams: Associations: Roles">
+  <include src="../../../uml/classDiagrams/associations/roles/topicPanel.md" />
+</panel>
+
+<p/>
+
+<img src="{{baseUrl}}/oop/associations/basics/images/ageListCalculatorPerson.png" height="100" />
+<p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 

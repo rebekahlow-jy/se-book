@@ -6,7 +6,27 @@
 
 <div id="main">
 
-...
+Enumerations are primarily a collection of values that can be considered a data type.
+
+<!-- <dynamic-panel src="../../../uml/classDiagrams/enumerations/topicPanel.md" header="UML: Class Diagrams: Enumerations" is-open></dynamic-panel> -->
+
+<panel header="UML: Class Diagrams: Enumerations">
+  <include src="../../../uml/classDiagrams/enumerations/topicPanel.md" />
+</panel>
+
+<p/>
+
+<tip-box>
+
+Example:
+
+<img src="{{baseUrl}}/oop/classes/enumerations/images/priority.png" height="100" />
+<p/>
+
+Priority: HIGH, MEDIUM, LOW
+
+</tip-box>
+
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 

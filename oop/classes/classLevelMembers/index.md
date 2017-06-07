@@ -48,7 +48,11 @@ The method getTotalPersons() is not suitable to send to a specific `Person` obje
 
 Class-level attributes and methods are collectively called _class-level members_ (also called _static members_ sometimes because some programming languages use the keyword `static` to identify class-level members). They are to be accessed using the class name rather than an instance of the class.
 
-<dynamic-panel src="../../../uml/classDiagrams/classLevelMembers/topicPanel.md" header="UML: Class Diagrams: Class Level Members" is-open></dynamic-panel>
+<!-- <dynamic-panel src="../../../uml/classDiagrams/classLevelMembers/topicPanel.md" header="UML: Class Diagrams: Class Level Members" is-open></dynamic-panel> -->
+
+<panel header="UML: Class Diagrams: Class Level Members">
+  <include src="../../../uml/classDiagrams/classLevelMembers/topicPanel.md" />
+</panel>
 
 <p/>
 

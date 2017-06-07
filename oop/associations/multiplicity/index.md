@@ -6,7 +6,13 @@
 
 <div id="main">
 
-...
+Another important aspect of setting up an object network is deciding how many objects take part in each association. That aspect is called _multiplicity_.
+
+<panel header="UML: Class Diagrams: Associations: Multiplicity">
+  <include src="../../../uml/classDiagrams/associations/multiplicity/topicPanel.md" />
+</panel>
+
+<p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 

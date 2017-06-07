@@ -6,7 +6,13 @@
 
 <div id="main">
 
-...
+In some cases, objects that are not directly linked in the object network can still interact with each other. These are a weaker form of associations we call _dependencies_.
+
+<panel header="UML: Class Diagrams: Dependencies">
+  <include src="../../../uml/classDiagrams/dependencies/topicPanel.md" />
+</panel>
+
+<p/>
 
 <!-- extras ------------------------------------------------------------------------------------ -->
 
