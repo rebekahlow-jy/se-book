@@ -15,7 +15,7 @@ Notation:
 
 Example:
 
-<img src="{{baseUrl}}/uml/objectDiagrams/objects/introduction/images/professorStudent.png" height="85" />
+<img src="{{baseUrl}}/uml/objectDiagrams/objects/introduction/images/professorStudent.png" height="65" />
 <p/>
 
 </tip-box>

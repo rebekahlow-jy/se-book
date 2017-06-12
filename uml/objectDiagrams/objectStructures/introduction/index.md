@@ -8,14 +8,14 @@
 
 Notation:
 
-<img src="{{baseUrl}}/uml/objectDiagrams/objectStructures/introduction/images/notation.png" height="85" />
+<img src="{{baseUrl}}/uml/objectDiagrams/objectStructures/introduction/images/notation.png" height="75" />
 <p/>
 
 <tip-box>
 
 Example:
 
-<img src="{{baseUrl}}/uml/objectDiagrams/objectStructures/introduction/images/professorStudent.png" height="85" />
+<img src="{{baseUrl}}/uml/objectDiagrams/objectStructures/introduction/images/professorStudent.png" height="150" />
 <p/>
 
 </tip-box>

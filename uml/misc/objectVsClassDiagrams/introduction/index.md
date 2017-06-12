@@ -23,7 +23,7 @@ Examples:
 <img src="{{baseUrl}}/uml/misc/objectVsClassDiagrams/introduction/images/professorStudentAdmin.png" height="85" />
 <p/>
 
-<img src="{{baseUrl}}/uml/misc/objectVsClassDiagrams/introduction/images/professorStudent.png" height="85" />
+<img src="{{baseUrl}}/uml/misc/objectVsClassDiagrams/introduction/images/professorStudent.png" height="150" />
 <p/>
 
 </tip-box>
