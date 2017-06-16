@@ -71,8 +71,8 @@ Code comparison: same function, different quality
 
 Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.
 
-[Bad]: ../../../images/Bad.png "Bad"
-[Good]: ../../../images/Good.png "Good"
+[Bad]: {{baseUrl}}/images/Bad.png "Bad"
+[Good]: {{baseUrl}}/images/Good.png "Good"
 
 
 
