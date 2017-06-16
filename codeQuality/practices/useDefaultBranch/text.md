@@ -30,8 +30,8 @@ else error("incorrect input");
 
 </tip-box>
 
-[Bad]: ../../../images/Bad.png "Bad"
-[Good]: ../../../images/Good.png "Good"
+[Bad]: {{baseUrl}}/images/Bad.png "Bad"
+[Good]: {{baseUrl}}/images/Good.png "Good"
 
 </div>
 

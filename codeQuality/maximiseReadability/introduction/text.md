@@ -74,8 +74,6 @@ Even if we do not intend to pass the code to someone else, code quality is still
 [Bad]: {{baseUrl}}/images/Bad.png "Bad"
 [Good]: {{baseUrl}}/images/Good.png "Good"
 
-
-
 </div>
 
 </div>
