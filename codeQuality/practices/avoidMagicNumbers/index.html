@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Coding Best Practices: [Practice] Nouns and Verbs as Names</title>
+    <title>CS2103/T Textbook - Coding Best Practices: [Practice] Avoid Magic Numbers</title>
     <link rel="stylesheet" href="..\..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\..\markbind\css\github.min.css">
 </head>
@@ -16,34 +16,37 @@
     </span>
   </p>
   <div>
-    <h4 id="use-nouns-for-things-and-verbs-for-actions-one">Use Nouns for Things and Verbs for Actions <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+    <h4 id="avoid-magic-numbers">Avoid Magic Numbers</h4>
   </div>
   <div id="main">
     <div>
-      <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
+      <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”).</p>
       <tip-box>
         <p>Example:</p>
         <table class="markbind-table table">
           <thead>
             <tr>
-              <th>Name for a</th>
               <th><img src="../../../images/Bad.png" alt="" title="Bad"></th>
               <th><img src="../../../images/Good.png" alt="" title="Good"></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Class</td>
-              <td><code>CheckLimit</code></td>
-              <td><code>LimitChecker</code></td>
+              <td><code>return 3.14236;</code></td>
+              <td><code>return 9</code></td>
             </tr>
             <tr>
-              <td>method</td>
-              <td><code>result()</code></td>
-              <td><code>calculate()</code></td>
+              <td><code>return PI</code></td>
+              <td><code>MAX_SIZE-1</code></td>
             </tr>
           </tbody>
         </table>
+      </tip-box>
+      <p>As you can see, using a named constant makes the code easier to understand because the name tells us more about the meaning of the number. Similarly, we can have ‘magic’ values of other data types.</p>
+      <tip-box>
+        <p><img src="../../../images/Bad.png" alt="" title="Bad"></p>
+        <pre><code class="hljs java"><span class="hljs-keyword">return</span> “Error <span class="hljs-number">1432</span>”;  <span class="hljs-comment">// A magic string!</span>
+</code></pre>
       </tip-box>
     </div>
   </div>
