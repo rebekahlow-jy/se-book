@@ -18,7 +18,7 @@ In particular, avoid _arrowhead_ style code.
 
 Example:
 
-<img src="{{baseUrl}}/codeQuality/practices/avoidDeepNesting/images/arrowHeadStyle.png" height="250" />
+<img src="{{baseUrl}}/codeQuality/practices/avoidDeepNesting/images/arrowheadStyle.png" height="250" />
 <p/>
 
 </tip-box>
