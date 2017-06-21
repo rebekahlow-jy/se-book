@@ -2,7 +2,7 @@
 
 <div class="website-content">
 
-<div id="path">Code Quality :arrow_right: Introduction :arrow_right:</div>
+<div id="path">Software Design :arrow_right: Introduction :arrow_right:</div>
 
 <div id="title">
 
