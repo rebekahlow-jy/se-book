@@ -28,7 +28,7 @@ Now, assume the system has two additional views used in parallel by different us
 
 When a student is added to the database using `NewStudentUi` shown above, both `StudentListUi` and `StudentStatsUi` should get updated automatically, as shown below.
 
-<img src="{{baseUrl}}/designPatterns/observer/whatItIs/images/studentListUi.png" height="150" />
+<img src="{{baseUrl}}/designPatterns/observer/whatItIs/images/studentListUI.png" height="150" />
 <p/>
 
 However, the `StudentList` object has no knowledge about `StudentListUi` and `StudentStatsUi` (note the direction of the navigability) and has no way to inform those objects. This is an example of the type of problem addressed by the Observer pattern.
