@@ -22,6 +22,18 @@
   <include src="abstractionOccurrence/index.md#main" />
 </panel>
 
+## Facade Pattern
+<panel header="================================================================"
+    type="seamless" alt="facade">
+  <include src="facade/index.md#main" />
+</panel>
+
+## Command Pattern
+<panel header="================================================================"
+    type="seamless" alt="command">
+  <include src="command/index.md#main" />
+</panel>
+
 ## Model View Controller (MVC) Pattern
 <panel header="================================================================"
     type="seamless" alt="model view controller">

@@ -22,9 +22,9 @@ class Logic {
 
     public static Logic getInstance() {
         if (theOne == null) {
-        theOne = new Logic();
-    }
-    return theOne;
+            theOne = new Logic();
+        }
+        return theOne;
     }
 }
 
