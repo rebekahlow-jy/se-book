@@ -86,11 +86,11 @@ public class Woman {
         if(boyfriend == m){
             return;
         }
-       if (boyfriend != null) {
+        if (boyfriend != null) {
             boyfriend.breakUp();
-       }
-       boyfriend = m;
-       m.setGirlfriend(this);
+        }
+        boyfriend = m;
+        m.setGirlfriend(this);
     }
 
     public void breakUp() {
