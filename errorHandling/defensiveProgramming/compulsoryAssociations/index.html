@@ -29,16 +29,38 @@
     <div>
       <p>Consider two classes, Account and Guarantor, with an association as shown in the following diagram:</p>
       <tip-box>
-        <p>Example:</p><img src="/se-book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="130">
+        <p>Example:</p><img src="/se-book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
         <p></p>
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+    Guarantor guarantor;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setGuarantor</span><span class="hljs-params">(Guarantor g)</span> </span>{
+        guarantor = g;
+    }
+}
+</code></pre>
         <p>Here, the association is compulsory i.e. an <code>Account</code> object should always be linked to a <code>Guarantor</code>. One way to implement this is to simply use a reference variable as above. However, what if someone else in the team used
           the <code>Account</code> class as:</p>
         <pre><code class="hljs java">Account a = <span class="hljs-keyword">new</span> Account();
 a.setGuarantor(<span class="hljs-keyword">null</span>);
 </code></pre>
         <p>This results in an <code>Account</code> without a <code>Guarantor</code>! In a real banking system, this could have serious consequences! The code here did not try to prevent such a thing from happening. To proactively enforce the multiplicity
-          constraint, a solution is offered as follows:</p><img src="/se-book/errorHandling/defensiveProgramming/compulsoryAssociations/images/account.png" height="280">
-        <p></p>
+          constraint, a solution is offered as follows:</p>
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+    <span class="hljs-keyword">private</span> Guarantor guarantor;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Account</span><span class="hljs-params">(Guarantor g)</span></span>{
+        <span class="hljs-keyword">if</span> (g == <span class="hljs-keyword">null</span>) stopSystemWithMessage(“multiplicity violated. Null Guarantor ”);
+        guarantor = g;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">setGuarantor</span> <span class="hljs-params">(Guarantor m)</span></span>{
+        <span class="hljs-keyword">if</span> (g == <span class="hljs-keyword">null</span>) stopSystemWithMessage(“multiplicity violated. Null Guarantor”);
+        guarantor = g;
+    }
+    …
+}
+</code></pre>
+        <p>In the class Account, <code>guarantor</code> has to be declared as a private variable to prevent the value from being changed from outside the class.</p>
       </tip-box>
       <panel header=":paperclip: Extras" expandable="" type="seamless" expanded="">
         <panel header=":mortar_board: Learning Outcomes" expandable="" type="seamless">

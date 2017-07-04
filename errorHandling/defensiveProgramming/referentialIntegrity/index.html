@@ -29,17 +29,87 @@
     <div>
       <p>A bidirectional association in the design (shown in (a)) is usually emulated at code level using two variables (as shown in (b)).</p>
       <tip-box>
-        <p>Example:</p><img src="/se-book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="280">
+        <p>Example:</p><img src="/se-book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
         <p></p>
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> </span>{
+    Woman girlfriend;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setGirlfriend</span><span class="hljs-params">(Woman w)</span> </span>{
+        girlfriend = w;
+    }
+    …
+}
+</code></pre>
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
+    Man boyfriend;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setBoyfriend</span><span class="hljs-params">(Man m)</span> </span>{
+        boyfriend = m;
+    }
+}
+</code></pre>
       </tip-box>
       <p>The two classes are meant to be used as shown in (c) below. Now see what happens if the two classes were used as in (d) below. Now James' girlfriend is Jean, while Jean's boyfriend is not James. This situation results as the code was not defensive
         enough to stop this “love triangle”. In such a situation, we say that <em>the referential integrity has been violated</em>. It simply means <em>there is an inconsistency in object references</em>.</p>
-      <tip-box><img src="/se-book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="180">
+      <tip-box>
+        <p>c)</p>
+        <pre><code class="hljs java">Woman jean;
+Man james;
+…
+james.setGirlfriend(jean);
+jean.setBoyfriend(james);
+</code></pre>
+      </tip-box>
+      <tip-box>
+        <p>d)</p>
+        <pre><code class="hljs java">Woman jean; Man james, yong;
+…
+james.setGirlfriend(jean);  
+jean.setBoyfriend(yong);  
+</code></pre><img src="/se-book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
         <p></p>
       </tip-box>
       <p>One way to prevent this situation is to implement the two classes as shown below. Note how the referential integrity is maintained.</p>
-      <tip-box><img src="/se-book/errorHandling/defensiveProgramming/referentialIntegrity/images/womanMan.png" height="320">
-        <p></p>
+      <tip-box>
+        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
+    <span class="hljs-keyword">private</span> Man boyfriend;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setBoyfriend</span><span class="hljs-params">(Man m)</span> </span>{
+        <span class="hljs-keyword">if</span>(boyfriend == m){
+            <span class="hljs-keyword">return</span>;
+        }
+       <span class="hljs-keyword">if</span> (boyfriend != <span class="hljs-keyword">null</span>) {
+            boyfriend.breakUp();
+       }
+       boyfriend = m;
+       m.setGirlfriend(<span class="hljs-keyword">this</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">breakUp</span><span class="hljs-params">()</span> </span>{
+        boyfriend = <span class="hljs-keyword">null</span>;
+    }   
+    ...
+}
+</code></pre>
+        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span></span>{
+    <span class="hljs-keyword">private</span> Woman girlfriend;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setGirlfriend</span><span class="hljs-params">(Woman w)</span> </span>{
+        <span class="hljs-keyword">if</span>(girlfriend == w){
+            <span class="hljs-keyword">return</span>;
+        }
+        <span class="hljs-keyword">if</span> (girlfriend != <span class="hljs-keyword">null</span>) {
+            girlfriend.breakUp();
+        }
+        girlfriend = w;
+        w.setBoyfriend(<span class="hljs-keyword">this</span>);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">breakUp</span><span class="hljs-params">()</span> </span>{
+        girlfriend = <span class="hljs-keyword">null</span>;
+    }  
+   ...
+}
+</code></pre>
       </tip-box>
       <p>When the code <code>james.setGirlfriend(jean)</code> is executed, the code ensures that <code>james</code> break up with any current girlfriend before he accepts <code>jean</code> as the girlfriend. Furthermore, the code ensures that <code>jean</code>        breaks up with any existing boyfriends and accepts <code>james</code> as the boyfriend.</p>
       <panel header=":paperclip: Extras" expandable="" type="seamless" expanded="">
@@ -195,8 +265,23 @@ r1.setPlayer(p2);
               <div>
                 <panel header="Q: Is the code given below a defensive translation of the associations shown in the class diagram?">
                   <question has-input="true">
-                    <p>(a) Is the code given below a defensive translation of the associations shown in the class diagram? Explain your answer.</p><img src="/se-book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacher.png" height="280">
-                    <p></p><img src="/se-book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
+                    <p>(a) Is the code given below a defensive translation of the associations shown in the class diagram? Explain your answer.</p>
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Teacher</span></span>{
+    <span class="hljs-keyword">private</span> Student favStudent;
+    
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFavStudent</span><span class="hljs-params">(Student s)</span></span>{
+        favStudent = s;
+    }
+}
+</code></pre>
+                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span></span>{
+    <span class="hljs-keyword">private</span> Teacher favTeacher;
+
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setFavTeacher</span><span class="hljs-params">(Teacher t)</span></span>{
+        favTeacher = t;
+    }
+}
+</code></pre><img src="/se-book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
                     <p></p>
                     <p>(b) In terms of maintaining referential integrity in the implementation, what is the difference between the following two diagrams?</p><img src="/se-book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png"
                       height="80">
