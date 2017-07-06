@@ -11,7 +11,7 @@
 <include src="requirements/topicToc.md" />
 
 
-### Design 
+### Design
 
 <include src="design/topicToc.md" />
 
@@ -19,7 +19,7 @@
 
 <include src="oop/topicToc.md" />
 
-* [Modeling]()
+<include src="modelling/topicToc.md" />
 
 <include src="architecture/topicToc.md" />
 
