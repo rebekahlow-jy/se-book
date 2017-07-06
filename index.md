@@ -10,11 +10,8 @@
 
 <include src="requirements/topicToc.md" />
 
-<include src="requirements/userStories/topicToc.md" />
 
-* [Product Design]()
-
-### Design
+### Design 
 
 <include src="design/topicToc.md" />
 
@@ -22,9 +19,9 @@
 
 <include src="oop/topicToc.md" />
 
-<include src="architecture/topicToc.md" />
+* [Modeling]()
 
-* [API Design]()
+<include src="architecture/topicToc.md" />
 
 <include src="designPatterns/topicToc.md" />
 
@@ -35,7 +32,6 @@
 <include src="codeQuality/topicToc.md" />
 
 * [Refactoring]()
-* [Defensive Programming]()
 
 <include src="documentation/topicToc.md" />
 
@@ -43,23 +39,36 @@
 
 <include src="integration/topicToc.md" />
 
-### Quality assurance
+### Quality Assurance
 
+* [Quality Assurance]()
 * [Testing]()
-* [Other QA techniques]()
+* [Test Case Design]()
 
-### Project management
+### Project Management
 
 * [Revision Control]()
-* [Dev Ops]()
+* [Project Planning]()
+* [Teamwork]()
 * [Software Process Models]()
+
+### Tools
+
+<include src="uml/topicToc.md" />
+
+* [Intellij IDEA]()
+* [Git and GitHub]()
+* [Java]()
+* [JUnit]()
+
 
 ### Supplementary
 
+* [Principles]()
 * [Definitions](common/definitions.html)
 * [References](common/references.html)
+* [Printable :scroll:](print.html)
 
-<include src="uml/topicToc.md" />
 <include src="java/style/topicToc.md" />
 
 </div>
