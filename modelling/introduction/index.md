@@ -9,6 +9,8 @@
 <div id="main">
 
 <include src="what/embed.md" />
+<include src="how/embed.md" />
+<include src="umlModels/embed.md" />
 
 </div>
 

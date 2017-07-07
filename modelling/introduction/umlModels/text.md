@@ -14,7 +14,7 @@
 
 The following diagram uses the class diagram notation to show the different types of UML diagrams.
 
-<img src="{{baseUrl}}/modelling/introduction/umlModels/images/modelDiagram.png" height="100" />
+<img src="{{baseUrl}}/modelling/introduction/umlModels/images/modelDiagram.png" height="300" />
 <p/>
 
 </div>
