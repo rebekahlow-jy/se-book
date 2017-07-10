@@ -6,7 +6,7 @@
 
 <div id="title">
 
-#### Rfactoring :two:
+#### Refactoring :two:
 
 </div>
 
