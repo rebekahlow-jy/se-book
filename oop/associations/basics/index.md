@@ -37,17 +37,11 @@ Example:
 
 These associations can be reflected among classes too.
 
-<panel header="UML: Class Diagrams: Associations: Basics">
-  <include src="../../../uml/classDiagrams/associations/basics/topicPanel.md" />
-</panel>
+<dynamic-panel src="../../../uml/classDiagrams/associations/basics/topicPanel.md" header="UML: Class Diagrams: Associations: Basics" is-open></dynamic-panel>
 
-<panel header="UML: Class Diagrams: Associations: Labels">
-  <include src="../../../uml/classDiagrams/associations/labels/topicPanel.md" />
-</panel>
+<dynamic-panel src="../../../uml/classDiagrams/associations/labels/topicPanel.md" header="UML: Class Diagrams: Associations: Labels" is-open></dynamic-panel>
 
-<panel header="UML: Class Diagrams: Associations: Roles">
-  <include src="../../../uml/classDiagrams/associations/roles/topicPanel.md" />
-</panel>
+<dynamic-panel src="../../../uml/classDiagrams/associations/roles/topicPanel.md" header="UML: Class Diagrams: Associations: Roles" is-open></dynamic-panel>
 
 <p/>
 
