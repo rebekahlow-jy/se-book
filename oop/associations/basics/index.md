@@ -8,9 +8,7 @@
 
 Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such connections are called _associations_.
 
-<panel header="UML: Object Diagrams: Object Structures">
-  <include src="../../../uml/objectDiagrams/objectStructures/topicPanel.md" />
-</panel>
+<dynamic-panel src="../../../uml/objectDiagrams/objectStructures/topicPanel.md" header="UML: Object Diagrams: Object Structures" is-open></dynamic-panel>
 
 <p/>
 
