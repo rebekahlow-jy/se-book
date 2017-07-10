@@ -14,7 +14,7 @@
 
 **Interaction overview** diagrams are a combination of activity diagrams and sequence diagrams.
 
-<img src="{{baseUrl}}/modelling/modellingBehaviours/interactionOverviewDiagrams/images/diagram.png" height="400" />
+<img src="{{baseUrl}}/modelling/modellingBehaviours/interactionOverviewDiagrams/images/diagram.png" height="420" />
 <p/>
 
 Source: https://en.wikipedia.org/wiki/Interaction_overview_diagram

@@ -17,7 +17,13 @@
 <img src="{{baseUrl}}/modelling/modellingBehaviours/communicationDiagrams/images/diagram.png" height="300" />
 <p/>
 
-Adapted from: uml-distilled
+Adapted from:
+<popover id="pop:uml-distilled">
+  <div slot="content">
+    <include src="../../../common/references.md#uml-distilled" />
+  </div>
+</popover>
+
 
 </div>
 
