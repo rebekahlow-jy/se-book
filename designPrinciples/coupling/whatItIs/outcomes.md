@@ -1,1 +1,1 @@
-* <span id="outcome-explain">:trophy: Can explain coupling (what, why) :one:</span>
+:trophy: Can explain coupling :one:

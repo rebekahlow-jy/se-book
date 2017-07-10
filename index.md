@@ -69,7 +69,9 @@
 <include src="uml/topicToc.md" />
 
 * [Intellij IDEA]()
-* [Git and GitHub]()
+
+<include src="gitAndGithub/topicToc.md" />
+
 * [Java]()
 * [JUnit]()
 
@@ -80,7 +82,8 @@
 
 * [Definitions](common/definitions.html)
 * [References](common/references.html)
-* [Printable :scroll:](print.html)
+* [Learning Outcomes](common/outcomes.html)
+* [Printable :scroll:](common/print.html)
 
 <include src="java/style/topicToc.md" />
 
