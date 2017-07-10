@@ -8,7 +8,9 @@
 
 When two classes are linked by an association, it does not necessarily mean both classes know about each other. The concept of which class in the association knows about the other class is called _navigability_.
 
-<dynamic-panel src="../../../uml/classDiagrams/associations/navigability/topicPanel.md" header="UML: Class Diagrams: Associations: Navigability" is-open></dynamic-panel>
+<panel header="UML: Class Diagrams: Associations: Navigability">
+  <include src="../../../uml/classDiagrams/associations/navigability/topicPanel.md" />
+</panel>
 
 <p/>
 

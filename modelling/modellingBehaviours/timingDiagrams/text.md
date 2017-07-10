@@ -12,7 +12,12 @@
 
 <div id="body">
 
-..
+**Timing diagrams** focus on timing constraints.
+
+<img src="{{baseUrl}}/modelling/modellingBehaviours/timingDiagrams/images/diagram.png" height="280" />
+<p/>
+
+Adapted from: uml-distilled
 
 </div>
 

@@ -8,7 +8,9 @@
 
 Objects in an OO solution need to be connected to each other to form a network so that they can interact with each other. Such connections are called _associations_.
 
-<dynamic-panel src="../../../uml/objectDiagrams/objectStructures/topicPanel.md" header="UML: Object Diagrams: Object Structures" is-open></dynamic-panel>
+<panel header="UML: Object Diagrams: Object Structures">
+  <include src="../../../uml/objectDiagrams/objectStructures/topicPanel.md" />
+</panel>
 
 <p/>
 
@@ -35,11 +37,17 @@ Example:
 
 These associations can be reflected among classes too.
 
-<dynamic-panel src="../../../uml/classDiagrams/associations/basics/topicPanel.md" header="UML: Class Diagrams: Associations: Basics" is-open></dynamic-panel>
+<panel header="UML: Class Diagrams: Associations: Basics">
+  <include src="../../../uml/classDiagrams/associations/basics/topicPanel.md" />
+</panel>
 
-<dynamic-panel src="../../../uml/classDiagrams/associations/labels/topicPanel.md" header="UML: Class Diagrams: Associations: Labels" is-open></dynamic-panel>
+<panel header="UML: Class Diagrams: Associations: Labels">
+  <include src="../../../uml/classDiagrams/associations/labels/topicPanel.md" />
+</panel>
 
-<dynamic-panel src="../../../uml/classDiagrams/associations/roles/topicPanel.md" header="UML: Class Diagrams: Associations: Roles" is-open></dynamic-panel>
+<panel header="UML: Class Diagrams: Associations: Roles">
+  <include src="../../../uml/classDiagrams/associations/roles/topicPanel.md" />
+</panel>
 
 <p/>
 
