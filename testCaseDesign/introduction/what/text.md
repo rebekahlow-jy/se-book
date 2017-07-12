@@ -46,4 +46,10 @@ For testing to be E&E, each new test we add should be targeting a potential faul
 
 </div>
 
+<div id="extras">
+
+<include src="exercises.md" />
+
+</div>
+
 </div>
