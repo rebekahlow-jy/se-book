@@ -14,11 +14,11 @@
 
 The five OOP principles given below are known as _SOLID principles_ (an acronym made up of the first letter of each principle):
 
-*	[Single Responsibility Principle (SRP)](./singleResponsibilityPrinciple/)
-*	[Open-Closed Principle (OCP)](../../designPrinciples/openClosedPrinciple/)
-*	[Liskov Substitution Principle (LSP)](./liskovSubstitutionPrinciple/)
-*	[Interface Segregation Principle (ISP)](./interfaceSegregationPrinciple/)
-*	[Dependency Inversion Principle (DIP)](./dependencyInversionPrinciple/)
+*	[Single Responsibility Principle (SRP)]({{baseUrl}}/principle/singleResponsibilityPrinciple/)
+*	[Open-Closed Principle (OCP)]({{baseUrl}}/principle/designPrinciples/openClosedPrinciple/)
+*	[Liskov Substitution Principle (LSP)]({{baseUrl}}/principle/liskovSubstitutionPrinciple/)
+*	[Interface Segregation Principle (ISP)]({{baseUrl}}/principle/interfaceSegregationPrinciple/)
+*	[Dependency Inversion Principle (DIP)]({{baseUrl}}/principle/dependencyInversionPrinciple/)
 
 </div>
 
