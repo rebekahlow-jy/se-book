@@ -6,40 +6,30 @@
 
 # Design Principles
 
-## Introduction
+## Abstraction
 
-<include src="abstraction/whatItIs/text.md#title" />
-<include src="abstraction/whatItIs/text.md#body" />
+<include src="abstraction/what/print.md" />
 
 ## Coupling
 
-<include src="coupling/whatItIs/text.md#title" />
-<include src="coupling/whatItIs/text.md#body" />
-<include src="coupling/whyWeCare/text.md#title" />
-<include src="coupling/whyWeCare/text.md#body" />
-<include src="coupling/howItHappens/text.md#title" />
-<include src="coupling/howItHappens/text.md#body" />
-<include src="coupling/types/text.md#title" />
-<include src="coupling/types/text.md#body" />
+<include src="coupling/what/print.md" />
+<include src="coupling/why/print.md" />
+<include src="coupling/how/print.md" />
+<include src="coupling/types/print.md" />
 
 ## Cohesion
 
-<include src="cohesion/whatItIs/text.md#title" />
-<include src="cohesion/whatItIs/text.md#body" />
-<include src="cohesion/whyWeCare/text.md#title" />
-<include src="cohesion/whyWeCare/text.md#body" />
-<include src="cohesion/howItHappens/text.md#title" />
-<include src="cohesion/howItHappens/text.md#body" />
+<include src="cohesion/what/print.md" />
+<include src="cohesion/why/print.md" />
+<include src="cohesion/how/print.md" />
 
 ## Open-Closed Principle
 
-<include src="openClosedPrinciple/whatItIs/text.md#title" />
-<include src="openClosedPrinciple/whatItIs/text.md#body" />
+<include src="openClosedPrinciple/what/print.md" />
 
 ## Dependency Inversion Principle
 
-<include src="dependencyInversionPrinciple/whatItIs/text.md#title" />
-<include src="dependencyInversionPrinciple/whatItIs/text.md#body" />
+<include src="dependencyInversionPrinciple/what/print.md" />
 
 </div>
 

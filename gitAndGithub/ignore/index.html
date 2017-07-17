@@ -25,7 +25,9 @@
   </tip-box>
   <div id="main">
     <div>
-      <panel src="/se-book\revisionControl\savingHistory\embed._include_.html" header="Revision Control: Saving History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+      <p>
+        <panel src="/se-book\revisionControl\savingHistory\embed._include_.html" header="Revision Control: Saving History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
       <p></p>
       <p>Add a file names <code>temp.txt</code> to the <code>things</code> repo you created. Suppose we don’t want this file to be revision controlled by Git. Let’s instructor Git to ignore <code>temp.txt</code></p>
       <tabs>
@@ -33,14 +35,14 @@
           <div>
             <p>The file should be currently listed under <code>Unstaged files</code>. Right-click it and choose <code>Ignore…</code>. Choose <code>Ignore exact filename(s)</code> and click <code>OK</code>.</p>
             <p>Observe that a file named <code>.gitignore</code> has been created in the working directory root and has the following line in it.</p>
-            <pre class="hljs"><code>temp<span class="hljs-selector-class">.text</span>
+            <pre class="hljs"><code>temp.text
 </code></pre>
           </div>
         </tab>
         <tab header="CLI">
           <div>
             <p>Create a file named <code>.gitignore</code> in the working directory root and add the following line in it.</p>
-            <pre class="hljs"><code>temp<span class="hljs-selector-class">.text</span>
+            <pre class="hljs"><code>temp.text
 </code></pre>
           </div>
         </tab>

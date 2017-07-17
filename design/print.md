@@ -4,10 +4,12 @@
 
 <div id="main">
 
-# Introduction
+# Design
 
-<include src="introduction/basics/text.md#title" />
-<include src="introduction/basics/text.md#body" />
+## Introduction
+
+<include src="introduction/basic/print.md" />
+<include src="introduction/multilevelDesign/print.md" />
 
 </div>
 

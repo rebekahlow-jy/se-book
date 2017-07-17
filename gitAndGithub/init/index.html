@@ -25,14 +25,16 @@
   </tip-box>
   <div id="main">
     <div>
-      <panel src="/se-book\revisionControl\repositories\embed._include_.html" header="Revision Control: Repositories" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+      <p>
+        <panel src="/se-book\revisionControl\repositories\embed._include_.html" header="Revision Control: Repositories" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
       <p></p>
       <p>Install <a href="https://www.sourcetreeapp.com/">SourceTree</a> which is Git + a GUI for Git.</p>
       <p>Suppose you want to create a repository in an empty directory <code>project1</code></p>
       <tabs>
         <tab header="SourceTree">
           <div>
-            <p>Click <code>File</code> -> <code>Clone/New…</code></p>
+            <p>Click <code>File</code> -&gt; <code>Clone/New…</code></p>
             <p>Click on <code>Create</code> button and enter the location of the directory as shown below. Click <code>Create</code></p><img src="/se-book/gitAndGithub/init/images/sourcetree_1.png" height="220">
             <p></p>
             <p>Go to the <code>things</code> folder and observe how a hidden folder <code>.git</code> has been created.</p>
@@ -47,21 +49,21 @@
             <p>Navigate to the <code>things</code> folder.</p>
             <p>Use the command <code>git init</code> which should initialize the repo.</p>
             <pre class="hljs"><code>$ git init
-Initialized empty Git repository <span class="hljs-keyword">in</span> <span class="hljs-string">c:</span><span class="hljs-regexp">/repos/</span>things<span class="hljs-regexp">/.git/</span>
+Initialized empty Git repository in c:/repos/things/.git/
 </code></pre>
             <p>You can use the command <code>ls -a</code> to view all files, which should show the <code>.git</code> directory that was created by the previous command.</p>
-            <pre class="hljs"><code>$ ls -<span class="hljs-selector-tag">a</span>
-.  ..  <span class="hljs-selector-class">.git</span>
+            <pre class="hljs"><code>$ ls -a
+.  ..  .git
 </code></pre>
             <p>You can also use the <code>git status</code> command to check the status of the newly-created repo. It should respond with something like the bellow</p>
-            <pre class="hljs"><code><span class="hljs-attribute">git status</span>
+            <pre class="hljs"><code>git status
 </code></pre>
-            <p>-></p>
-            <pre class="hljs"><code><span class="hljs-comment"># On branch master</span>
-<span class="hljs-comment">#</span>
-<span class="hljs-comment"># Initial commit</span>
-<span class="hljs-comment">#</span>
-nothing <span class="hljs-built_in">to</span> commit (<span class="hljs-built_in">create</span>/copy <span class="hljs-built_in">files</span> <span class="hljs-keyword">and</span> use <span class="hljs-string">"git add"</span> <span class="hljs-built_in">to</span> track)
+            <p>-&gt;</p>
+            <pre class="hljs"><code># On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use &quot;git add&quot; to track)
 </code></pre>
           </div>
         </tab>

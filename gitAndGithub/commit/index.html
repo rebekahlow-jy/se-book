@@ -25,7 +25,9 @@
   </tip-box>
   <div id="main">
     <div>
-      <panel src="/se-book\revisionControl\savingHistory\embed._include_.html" header="Revision Control: Saving History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+      <p>
+        <panel src="/se-book\revisionControl\savingHistory\embed._include_.html" header="Revision Control: Saving History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
       <p></p>
       <p>Create an empty repo as described <a href="./init/">here</a>.</p>
       <p>Create a file named <code>fruits.txt</code> in the folder and add some dummy text to it.</p>
@@ -47,16 +49,16 @@
             <p>You can use the <code>git status</code> command to check the status of the working directory.</p>
             <pre><code class="hljs sh">git status
 </code></pre>
-            <p>-></p>
-            <pre class="hljs"><code><span class="hljs-meta">#</span><span class="bash"> On branch master</span>
-<span class="hljs-meta">#</span><span class="bash"></span>
-<span class="hljs-meta">#</span><span class="bash"> Initial commit</span>
-<span class="hljs-meta">#</span><span class="bash"></span>
-<span class="hljs-meta">#</span><span class="bash"> Untracked files:</span>
-<span class="hljs-meta">#</span><span class="bash">   (use <span class="hljs-string">"git add <file cwf="</span>C:\Users\Rebekah\Desktop\SIP\se-book-fork\gitAndGithub\commit\cli_1.md<span class="hljs-string">">..."</span> to include <span class="hljs-keyword">in</span> what will be committed)</span>
-<span class="hljs-meta">#</span><span class="bash"></span>
-<span class="hljs-meta">#</span><span class="bash">   a.txt</span>
-nothing added to commit but untracked files present (use "git add" to track)
+            <p>-&gt;</p>
+            <pre class="hljs"><code># On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+#
+#   a.txt
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
 </code></pre>
             <p></p>
           </div>
@@ -88,13 +90,13 @@ nothing added to commit but untracked files present (use "git add" to track)
             <pre><code class="hljs sh">git add fruits.txt
 git status
 </code></pre>
-            <p>-></p>
+            <p>-&gt;</p>
             <pre><code class="hljs sh"><span class="hljs-comment"># On branch master</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Initial commit</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Changes to be committed:</span>
-<span class="hljs-comment">#   (use "git rm --cached <file cwf="C:\Users\Rebekah\Desktop\SIP\se-book-fork\gitAndGithub\commit\cli_2.md">..." to unstage)</span>
+<span class="hljs-comment">#   (use "git rm --cached &lt;file&gt;..." to unstage)</span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment">#       new file:   fruits.txt</span>
 <span class="hljs-comment">#</span>
@@ -119,12 +121,12 @@ git status
             <p>You can use the <code>log</code> command to see the commit history</p>
             <pre><code class="hljs sh">git <span class="hljs-built_in">log</span>
 </code></pre>
-            <p>-></p>
-            <pre class="hljs"><code>commit <span class="hljs-number">8</span>fd30a6910efb28bb258cd01be93e481caeab846
-<span class="hljs-symbol">Author:</span> … < … @... >
-<span class="hljs-symbol">Date:</span>   Wed Jul <span class="hljs-number">5</span> <span class="hljs-number">16</span>:<span class="hljs-number">06</span>:<span class="hljs-number">28</span> <span class="hljs-number">2017</span> +<span class="hljs-number">0800</span>
+            <p>-&gt;</p>
+            <pre class="hljs"><code>commit 8fd30a6910efb28bb258cd01be93e481caeab846
+Author: … &lt; … @... &gt;
+Date:   Wed Jul 5 16:06:28 2017 +0800
 
-  <span class="hljs-keyword">Add</span> fruits.txt
+  Add fruits.txt
 </code></pre>
           </div>
         </tab>
