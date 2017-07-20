@@ -1,1 +1,1 @@
-:trophy: Can explain acceptance testing :one:
+:trophy: Can explain regression testing :one:
