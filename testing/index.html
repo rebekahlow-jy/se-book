@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Testing</title>
+    <title>SEforSDL - Testing</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
 </head>
@@ -144,7 +144,29 @@
                     <p>During unit testing, stubs are used in place of collaborating objects in order to isolate the SUT from those objects. Doing so prevents bugs within the collaborating objects from interfering with the test.</p>
                     <p><strong>A stub has the same interface as the collaborator it replaces, but its implementation is meant to be so simple that it cannot have any bugs. It mimics the responses of the collaborating object, but only for the inputs used for testing.</strong>                      That is, it does not know how to respond to any other inputs. These mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
                   </div>
-                  <div></div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" type="info" expandable="">
+                        <div>
+                          <panel header=":lock::key: True or False?">
+                            <question>
+                              <p>Stubs and drivers help us test a component in isolation from other interacting components.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                              </ul>
+                              <div slot="answer">
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                                </ul>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
                 </div>
               </panel>
             </div>
@@ -273,6 +295,53 @@
         </panel>
       </div>
       <div>
+        <h3 id="dogfooding">Dogfooding</h3>
+        <panel type="seamless" header="%%-----------------------------------------%%">
+          <div>
+            <div>
+              <div>
+                <h4 id="what-three-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+              </div>
+              <tip-box type="success">
+                <div>
+                  <p>🏆 Can explain dogfooding <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+                </div>
+              </tip-box>
+              <panel type="seamless" header=" %%- - - - - - - - - -%%">
+                <div>
+                  <div>
+                    <p>...</p>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" type="info" expandable="">
+                        <div>
+                          <panel header=":lock::key: True or False?">
+                            <question>
+                              <p>‘dogfooding’ can help us improve product designs. (If you don’t know the meaning of this term, a Web search is in order 😃</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                              </ul>
+                              <div slot="answer">
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                                </ul>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </panel>
+            </div>
+          </div>
+        </panel>
+      </div>
+      <div>
         <h3 id="developer-testing">Developer Testing</h3>
         <panel type="seamless" header="%%-----------------------------------------%%">
           <div>
@@ -323,7 +392,7 @@
                     <div>
                       <panel header=":muscle: Exercises" type="info" expandable="">
                         <div>
-                          <panel header="Q: Discuss advantages and disadvantages of developers testing their own code.">
+                          <panel header=":lock::key: Discuss advantages and disadvantages of developers testing their own code.">
                             <question has-input="true">
                               <p>Discuss advantages and disadvantages of developers testing their own code.</p>
                               <div slot="answer">
@@ -341,6 +410,36 @@
                                   <li>Developer may have misunderstood what the SUT is supposed to do in the first place.</li>
                                   <li>Developer may lack the testing expertise.</li>
                                 </ul>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: True or False?">
+                            <question>
+                              <p>A) The cost of fixing a bug goes down as we reach the product release.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                              </ul>
+                              <p>B) Developers should pass their code to testers for unit testing as soon as the implementation is done.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>A) The cost of fixing a bug goes down as we reach the product release.</p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                                </ul>
+                                <p>Explanation: No, the cost goes up over time.</p>
+                                <p>B) Developers should pass their code to testers for unit testing as soon as the implementation is done.</p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                                </ul>
+                                <p>Explanation: Unit testing is a type of ‘developer testing’. It is not done by testers.</p>
                               </div>
                             </question>
                           </panel>
@@ -390,7 +489,68 @@
                       </div>
                     </popover>
                   </div>
-                  <div></div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" type="info" expandable="">
+                        <div>
+                          <panel header=":lock::key: True or False?">
+                            <question>
+                              <p>A) Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                              </ul>
+                              <p>B) Scripted testing is better than exploratory testing.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>A) Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                                </ul>
+                                <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
+                                <p>B) Scripted testing is better than exploratory testing.</p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                                </ul>
+                                <p>Explanation: Each has pros and cons. Relying on only one is not recommended. A combination is better.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header=":lock::key: Which testing technique is better?">
+                            <question>
+                              <p>Which testing technique is better?</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. error guessing</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. bug hunting</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. attack-based testing</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. reactive testing</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. I don’t know. I haven’t heard these terms before.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. These are different names used to describe exploratory testing.</li>
+                              </ul>
+                              <div slot="answer">
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. error guessing</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. bug hunting</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. attack-based testing</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. reactive testing</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. I don’t know. I haven’t heard these terms before.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> f. These are different names used to describe exploratory testing.</li>
+                                </ul>
+                                <p>Explanation: These terms are mentioned in the handout.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
                 </div>
               </panel>
             </div>
@@ -525,7 +685,41 @@
                       <p>A system could work perfectly on the development environment, but fail in the deployment environment due to subtle differences between the two.</p>
                     </tip-box>
                   </div>
-                  <div></div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" type="info" expandable="">
+                        <div>
+                          <panel header=":lock::key: Choose the least correct statement about system testing and acceptance testing.">
+                            <question>
+                              <p>Choose the least correct statement about system testing and acceptance testing.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Both system testing and acceptance testing typically involve the whole system.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. System testing is typically more extensive than acceptance testing.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. System testing can include testing for non-functional qualities.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Acceptance testing typically has more user involvement than system testing.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. In smaller projects, the developers may do system testing as well, in addition to developer testing.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. If system testing is adequately done, we need not do acceptance testing.</li>
+                              </ul>
+                              <div slot="answer">
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Both system testing and acceptance testing typically involve the whole system.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. System testing is typically more extensive than acceptance testing.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. System testing can include testing for non-functional qualities.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Acceptance testing typically has more user involvement than system testing.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. In smaller projects, the developers may do system testing as well, in addition to developer testing.</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> f. If system testing is adequately done, we need not do acceptance testing.</li>
+                                </ul>
+                                <p>Explanation:</p>
+                                <p>System testing can aim for full coverage and can go beyond the system specification. Therefore, system testing is typically more extensive than acceptance testing.</p>
+                                <p>Passing system tests does not necessarily mean passing acceptance testing. One reason for this is system tests are usually done on testbed environments while acceptance tests are usually done on the deployment environment.
+                                  Another reason is system testing is done against the system specification while acceptance tests can discover mismatches between system specification and user requirements (i.e. validation failures).</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
                 </div>
               </panel>
             </div>
@@ -552,7 +746,33 @@
                     <p>To detect and correct regressions, we need to retest all related components. Testing with this intent is called <em>regression testing</em>.</p>
                     <p>Regression testing is more effective when it is done frequently, after each small change. However, doing so can be prohibitively expensive if testing is done manually. Hence, regression testing is more practical when it is automated.</p>
                   </div>
-                  <div></div>
+                  <div>
+                    <div>
+                      <panel header=":muscle: Exercises" type="info" expandable="">
+                        <div>
+                          <panel header=":lock::key: True or False?">
+                            <question>
+                              <p>Regression testing is the automated re-testing of a software after it has been modified.</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Partially true</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Partially true</li>
+                                </ul>
+                                <p>Explanation: Only partially true. Regression testing need not be automated but automation is highly recommended.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
                 </div>
               </panel>
             </div>
@@ -763,6 +983,28 @@ FC output.txt expected.txt
                 number of such manual test cases can be reduced as most of the system has been tested using automated API testing.</p>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: True or False?">
+                      <question>
+                        <p>GUI testing is usually easier than API testing because it doesn’t require any extra coding.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                          </ul>
+                          <p>Explanation: The handout section on ‘GUI testing’ describes why GUI testing is more difficult than API testing.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -827,6 +1069,34 @@ FC output.txt expected.txt
               </ul>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Which of these gives us the highest intensity of testing?">
+                      <question>
+                        <p>Top-down design is better than bottom-up design.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. 100% statement coverage</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. 100% path coverage</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. 100% branch coverage</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. 100% condition coverage</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. 100% statement coverage</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. 100% path coverage</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. 100% branch coverage</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. 100% condition coverage</li>
+                          </ul>
+                          <p>Explanation: 100% path coverage implies all possible execution paths through the SUT have been tested. This is essentially ‘exhaustive testing’. While this is very hard to achieve for a non-trivial SUT, it technically gives us
+                            the highest intensity of testing. If all tests pass at 100% path coverage, the SUT code can be considered ‘bug free’. However, note that path coverage does not include paths that are missing from the code altogether because
+                            the programmer left them out by mistake.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -861,7 +1131,7 @@ FC output.txt expected.txt
     <div>
       <div>
         <div>
-          <h4 id="what-three-2">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
+          <h4 id="what-three-3">What <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></h4>
         </div>
         <tip-box type="success">
           <div>
@@ -957,6 +1227,33 @@ FC output.txt expected.txt
 </code></pre>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Choose the INCORRECT statement about dependency injection">
+                      <question>
+                        <p>Choose the INCORRECT statement about dependency injection</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It is a technique for increasing dependencies</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is useful for unit testing.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It can be done using polymorphism.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It can be used to substitute a component with a stub.</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. It is a technique for increasing dependencies</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is useful for unit testing.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It can be done using polymorphism.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It can be used to substitute a component with a stub.</li>
+                          </ul>
+                          <p>Explanation: It is a technique we can use to substitute an existing component with another, without breaking its dependent components. It is useful when we want to test a component in isolation but the SUT (i.e., component under
+                            test) depends on other components. Using dependency injection, we can substitute those other components with test-friendly stubs. This is often done using polymorphism.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -983,6 +1280,40 @@ FC output.txt expected.txt
                 behavior. While TDD has its fair share of detractors, there are many who consider it a good way to reduce defects.</p>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: True or False?">
+                      <question>
+                        <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                        </ul>
+                        <p>B) Testing tools such as Junit require us to follow TDD.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                        </ul>
+                        <div slot="answer">
+                          <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                          </ul>
+                          <p>Explanation: No, not <em>all</em>. We proceed in small steps, writing tests and functional code in tandem, but writing the test before we write the corresponding functional code.</p>
+                          <p>B) Testing tools such as Junit require us to follow TDD.</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. False</li>
+                          </ul>
+                          <p>Explanation: They can be used for TDD, but they can be used without TDD too.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>

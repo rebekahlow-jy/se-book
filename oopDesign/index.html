@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Object Oriented Programming</title>
+    <title>SEforSDL - Object Oriented Programming</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
 </head>
@@ -16,7 +16,98 @@
   <h2 id="introduction">Introduction</h2>
   <panel header="================================================================" type="seamless" alt="introduction">
     <div>
-      <p>null</p>
+      <div>
+        <h4 id="introduction-one">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+      </div>
+      <tip-box type="success">
+        <div>
+          <p>🏆 Can describe OOP at a higher level <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+        </div>
+      </tip-box>
+      <panel type="seamless" header=" %%- - - - - - - - - -%%">
+        <div>
+          <div>
+            <p>Object Oriented Programming is a widely used programming paradigm. Here is an introductory explanation of OOP from Apple:</p>
+            <blockquote>
+              <p>Programming languages have traditionally divided the world into two parts—data and operations on data. Data is static and immutable, except as the operations may change it. The procedures and functions that operate on data have no lasting
+                state of their own; they’re useful only in their ability to affect data.</p>
+              <p>This division is, of course, grounded in the way computers work, so it’s not one that you can easily ignore or push aside. Like the equally pervasive distinctions between matter and energy and between nouns and verbs, it forms the background
+                against which we work. At some point, all programmers—even object-oriented programmers—must lay out the data structures that their programs will use and define the functions that will act on the data.</p>
+              <p>With a procedural programming language like C, that’s about all there is to it. The language may offer various kinds of support for organizing data and functions, but it won’t divide the world any differently. Functions and data structures
+                are the basic elements of design.</p>
+              <p>Object-oriented programming doesn’t so much dispute this view of the world as restructure it at a higher level. It groups operations and data into modular units called objects and lets you combine objects into structured networks to form
+                a complete program. In an object-oriented programming language, objects and object interactions are the basic elements of design.</p>
+              <p>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</p>
+            </blockquote>
+            <p>{mention other programming paradigms}</p>
+          </div>
+          <div>
+            <div>
+              <panel header=":muscle: Exercises" type="info" expandable="">
+                <div>
+                  <panel header=":lock::key: Choose the least correct statement.">
+                    <question>
+                      <p>A) Choose the least correct statement</p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. OO is a programming paradigm</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. OO guides us in how to structure the solution</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. OO is mainly an abstraction mechanism</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. OO is a programming language</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. OO is modeled after how the objects in real world work</li>
+                      </ul>
+                      <p>B) Choose the correct statement</p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Java and C++ are OO languages</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. C language follows the <em>Functional Programming</em> paradigm</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Java can be used to write procedural code</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Prolog follows the Logic Programming paradigm</li>
+                      </ul>
+                      <div slot="answer">
+                        <p>A) Choose the least correct statement</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. OO is a programming paradigm</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. OO guides us in how to structure the solution</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. OO is mainly an abstraction mechanism</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. OO is a programming language</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. OO is modeled after how the objects in real world work</li>
+                        </ul>
+                        <p>Explanation: While many languages support the OO paradigm, OO is not a language itself.</p>
+                        <p>B) Choose the correct statement</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Java and C++ are OO languages</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. C language follows the <em>Functional Programming</em> paradigm</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Java can be used to write procedural code</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Prolog follows the Logic Programming paradigm</li>
+                        </ul>
+                        <p>Explanation: C follows the procedural paradigm. Yes, we can write procedural code using OO languages e.g., AddressBook-level1.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+                <div>
+                  <panel header=":lock::key: True or False?">
+                    <question>
+                      <p>OO is a higher level mechanism than the procedural paradigm.</p>
+                      <ul class="task-list">
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                      </ul>
+                      <div slot="answer">
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                        </ul>
+                        <p>Explanation: Procedural languages work at simple data structures (e.g., integers, arrays) and functions level. Because an object is an abstraction over data+related functions, OO works at a higher level.</p>
+                      </div>
+                    </question>
+                  </panel>
+                </div>
+              </panel>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </panel>
     </div>
   </panel>
   <h2 id="objects">Objects</h2>
@@ -182,6 +273,36 @@
               </tip-box>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Choose the least correct statement.">
+                      <question>
+                        <p>Choose the least correct statement</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an abstraction of [data + related functions]</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an abstraction of [state + related behavior]</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An object can contain instance variables and methods</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An object is an instance of a class</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. An object should not depend on another object</li>
+                        </ul>
+                        <div slot="answer">
+                          <p>Choose the least correct statement</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an abstraction of [data + related functions]</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an abstraction of [state + related behavior]</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An object can contain instance variables and methods</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. An object is an instance of a class</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> e. An object should not depend on another object</li>
+                          </ul>
+                          <p>Explanation: The first two statements means the same concept (the ‘state’ of an object is represented by the data values it holds). The third statement explains how that concept is implemented at code level. Objects can interact
+                            with other objects to perform various tasks and therefore may depend on other objects.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -234,6 +355,29 @@
               </ol>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Choose the correct statement.">
+                      <question>
+                        <p>Choose the correct statement</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an encapsulation because it packages data and behavior into one bundle.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object is an encapsulation because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</li>
+                        </ul>
+                        <div slot="answer">
+                          <p>Choose the correct statement</p>
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. An object is an encapsulation because it packages data and behavior into one bundle.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. An object is an encapsulation because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</li>
+                          </ul>
+                          <p>Explanation: The second statement should be. An object is an <em>abstraction</em> because it lets us think in terms of higher level concepts such as Students rather than student-related functions and data separately.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -323,6 +467,33 @@
               <p></p>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Which of these is most suitable as a class-level variable?">
+                      <question>
+                        <p>Which of these is most suitable as a class-level variable?</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. system: multi-player Pacman game, Class: Player, variable: totalScore</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. system: eLearning system, class: Course, variable: totalStudents</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: Task, variable: totalPendingTasks</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: ArrayList, variable: total (i.e., total items in a given ArrayList object)</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. system: multi-player Pacman game, Class: Player, variable: totalScore</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. system: eLearning system, class: Course, variable: totalStudents</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. system: ToDo manager, class: Task, variable: totalPendingTasks</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: ArrayList, variable: total (i.e., total items in a given ArrayList object)</li>
+                          </ul>
+                          <p>Explanation: totalPendingTasks should not be managed by individual Task objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance level as their value varies
+                            from instance to instance. e.g., totalStudents for one Course object will differ from totalStudents of another.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -422,6 +593,30 @@
               <p></p>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: What does the navigability given by this diagram mean?">
+                      <question><img src="/se-book/oopDesign/associations/navigability/images/unitItem.png" height="100">
+                        <p></p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object knows about the Item object it is linked to</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object knows about the Unit object it is linked to</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Depends on the programming language</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. A Unit object knows about the Item object it is linked to</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object knows about the Unit object it is linked to</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Depends on the programming language</li>
+                          </ul>
+                          <p>Explanation: The diagram indicates that Unit item should know about the Item object. In the implementation, the Unit object will hold a Unit object in one of its variables.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -446,6 +641,31 @@
               <p></p>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Which statement agrees with the  multiplicity shown in this diagram?">
+                      <question><img src="/se-book/oopDesign/associations/multiplicity/images/unitItem.png" height="100">
+                        <p></p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object can be linked to any number of Item objects</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object must be linked 1,2,3 or 4 Unit objects.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A Unit object must be linked 1,2,3, or 4 Item objects</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Item object can be linked 1,2,3, or 4 of other Item objects.</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A Unit object can be linked to any number of Item objects</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An Item object must be linked 1,2,3 or 4 Unit objects.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. A Unit object must be linked 1,2,3, or 4 Item objects</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A Item object can be linked 1,2,3, or 4 of other Item objects.</li>
+                          </ul>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -531,6 +751,27 @@
               <p>The distinction between composition and aggregation is rather blurred. Martin Fowler’s famous book <em>UML Distilled</em> advocates omitting the aggregation symbol altogether as using it adds more confusion than clarity.</p>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?">
+                      <question>
+                        <p>Which one of these is recommended not to use in UML diagrams because it adds more confusion than clarity?</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Composition symbol</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Aggregation symbol</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Composition symbol</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. Aggregation symbol</li>
+                          </ul>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -1037,6 +1278,34 @@ class Academic extends Staff {
               </ul>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Which of these is least related to how OO programs achieve polymorphism?">
+                      <question>
+                        <p>Which of these is least related to how OO programs achieve polymorphism?</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. substitutability</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. dynamic binding</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. operation overloading</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. interfaces</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. abstract classes</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. substitutability</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. dynamic binding</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. operation overloading</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. interfaces</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. abstract classes</li>
+                          </ul>
+                          <p>Explanation: Operation overriding is the one that is related, not operation overloading.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -1049,11 +1318,11 @@ class Academic extends Staff {
     <div>
       <div>
         <div>
-          <h4 id="introduction-one">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
+          <h4 id="introduction-one-2">Introduction <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></h4>
         </div>
         <tip-box type="success">
           <div>
-            <p>🏆 Can explain the use how design modelling can be used before implementation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
+            <p>🏆 Can explain how modelling can be used before implementation <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0031-20e3.png"></p>
           </div>
         </tip-box>
         <panel type="seamless" header=" %%- - - - - - - - - -%%">

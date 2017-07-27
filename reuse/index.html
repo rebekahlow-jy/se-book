@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Reuse</title>
+    <title>SEforSDL - Reuse</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
 </head>
@@ -113,6 +113,50 @@
               </tip-box>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Choose the INCORRECT statement">
+                      <question>
+                        <p>Choose the INCORRECT statement</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A software component can have an API.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Any method/function of a class is part of its API.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The API forms the contract between the component developer and the component user.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Sequence diagrams can be used to show how components interact with each other via APIs.</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A software component can have an API.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. Any method/function of a class is part of its API.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The API forms the contract between the component developer and the component user.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Sequence diagrams can be used to show how components interact with each other via APIs.</li>
+                          </ul>
+                          <p>Explanation: Only <em>public</em> methods/functions are part of the API</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <div>
+                    <panel header=":lock::key: True or False?">
+                      <question>
+                        <p>Defining component APIs early allows components to be developed in parallel.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
+                          </ul>
+                          <p>Explanation: Yes, once we know the precise behavior expected of each component, we can start developing them in parallel.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -281,6 +325,37 @@
               </tip-box>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Choose the incorrect statement about software frameworks.">
+                      <question>
+                        <p>Choose the incorrect statement about software frameworks.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They follow the hollywood principle, otherwise known as ‘inversion of control’</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They come with full or partial implementation.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are more concrete than patterns or principles.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. They are often configurable.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They are reuse mechanisms.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. They are similar to reusable libraries but bigger.</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They follow the hollywood principle, otherwise known as ‘inversion of control’</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They come with full or partial implementation.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are more concrete than patterns or principles.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. They are often configurable.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They are reuse mechanisms.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> f. They are similar to reusable libraries but bigger.</li>
+                          </ul>
+                          <p>Explanation: While both libraries and frameworks are reuse mechanisms, and both more concrete than principles and patterns, libraries differ from frameworks in some key ways. One of them is the ‘inversion of control’ used by
+                            frameworks but not libraries. Furthermore, frameworks do not have to be bigger than libraries all the time.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -311,6 +386,34 @@
               </ul>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Choose the correct statement.">
+                      <question>
+                        <p>Which one of these is not a framework but a library?</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. JUnit</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Eclipse</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Drupal</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Ruby on Rails</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They are all frameworks</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. JUnit</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Eclipse</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Drupal</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Ruby on Rails</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> e. They are all frameworks</li>
+                          </ul>
+                          <p>Explanation: These are framework examples cited in the handout.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -416,6 +519,30 @@
               </ol>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Choose the correct statement.">
+                      <question>
+                        <p>Google Calendar belongs to which category of cloud computing services?s</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. IaaS</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. PaaS</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. SaaS</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. IaaS</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. PaaS</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. SaaS</li>
+                          </ul>
+                          <p>Explanation: It is a <em>software</em> as a service. Instead of installing a calendar software on your desktop, we can use the Google Calendar software that lives ‘on the cloud’.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>

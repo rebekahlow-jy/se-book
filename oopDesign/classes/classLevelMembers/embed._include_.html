@@ -39,6 +39,33 @@
       <p></p>
     </div>
     <div>
+      <div>
+        <panel header=":muscle: Exercises" type="info" expandable="">
+          <div>
+            <panel header=":lock::key: Which of these is most suitable as a class-level variable?">
+              <question>
+                <p>Which of these is most suitable as a class-level variable?</p>
+                <ul class="task-list">
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. system: multi-player Pacman game, Class: Player, variable: totalScore</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. system: eLearning system, class: Course, variable: totalStudents</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: Task, variable: totalPendingTasks</li>
+                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: ArrayList, variable: total (i.e., total items in a given ArrayList object)</li>
+                </ul>
+                <div slot="answer">
+                  <ul class="task-list">
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. system: multi-player Pacman game, Class: Player, variable: totalScore</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. system: eLearning system, class: Course, variable: totalStudents</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. system: ToDo manager, class: Task, variable: totalPendingTasks</li>
+                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: ArrayList, variable: total (i.e., total items in a given ArrayList object)</li>
+                  </ul>
+                  <p>Explanation: totalPendingTasks should not be managed by individual Task objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance level as their value varies from instance
+                    to instance. e.g., totalStudents for one Course object will differ from totalStudents of another.</p>
+                </div>
+              </question>
+            </panel>
+          </div>
+        </panel>
+      </div>
       <div></div>
     </div>
   </div>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Textbook - Software Design Principles</title>
+    <title>SEforSDL - Software Design Principles</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
 </head>
@@ -118,7 +118,7 @@
               <div>
                 <panel header=":muscle: Exercises" type="info" expandable="">
                   <div>
-                    <panel header="Q: Explain the link (if any) between regression and coupling.">
+                    <panel header=":lock::key: Explain the link (if any) between regression and coupling.">
                       <question has-input="true">
                         <p>Explain the link (if any) between regression and coupling.</p>
                         <div slot="answer">
@@ -128,11 +128,35 @@
                     </panel>
                   </div>
                   <div>
-                    <panel header="Q: Discuss the relationship between coupling and testability (testability is a measure of how easily a given component can be tested).">
+                    <panel header=":lock::key: Discuss the relationship between coupling and testability (testability is a measure of how easily a given component can be tested).">
                       <question has-input="true">
                         <p>Discuss the relationship between coupling and testability (testability is a measure of how easily a given component can be tested).</p>
                         <div slot="answer">
                           <p>Coupling decreases testability as it is difficult to isolate highly-coupled objects.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                  <div>
+                    <panel header=":lock::key: Choose the least correct statement.">
+                      <question>
+                        <p>Choose the least correct statement.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. As coupling increases, testability decreases.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. As coupling increases, the risk of regression increases.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. As coupling increases, the value of automated regression testing increases.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. As coupling increases, integration becomes easier as everything is connected together.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As coupling increases, maintainability decreases.</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. As coupling increases, testability decreases.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. As coupling increases, the risk of regression increases.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. As coupling increases, the value of automated regression testing increases.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> d. As coupling increases, integration becomes easier as everything is connected together.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As coupling increases, maintainability decreases.</li>
+                          </ul>
+                          <p>Explanation: High coupling means either more components require to be integrated at once in a big-bang fashion (increasing the risk of things going wrong) or more drivers and stubs are required when integrating incrementally.</p>
                         </div>
                       </question>
                     </panel>
@@ -167,6 +191,36 @@
               </ul>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Which of these does not indicate a coupling between components A and B?">
+                      <question>
+                        <p>Which of these does not indicate a coupling between components A and B?</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. component A has access to internal structure of component B.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. component A and B are written by the same developer.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. component A calls component B.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. component A receives an object of component B as a parameter.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. component A inherits from component B.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. components A and B have to follow the same data format or communication protocol.</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. component A has access to internal structure of component B.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> b. component A and B are written by the same developer.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. component A calls component B.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. component A receives an object of component B as a parameter.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. component A inherits from component B.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. components A and B have to follow the same data format or communication protocol.</li>
+                          </ul>
+                          <p>Explanation: Being written by the same developer does not imply a coupling.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -364,6 +418,32 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
               </tip-box>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Choose the correct statement.">
+                      <question>
+                        <p>Which of these is closest to the meaning of the open-closed principle?</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. We should be able to change a software module’s behavior without modifying its code.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A software module should remain open to modification as long as possible.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A software module should be either open to modification and closed to extension.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Open source software rocks. Closed source software sucks.</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. We should be able to change a software module’s behavior without modifying its code.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A software module should remain open to modification as long as possible.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A software module should be either open to modification and closed to extension.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Open source software rocks. Closed source software sucks.</li>
+                          </ul>
+                          <p>Explanation: Please refer the handout for the definition of OCP.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
@@ -400,6 +480,33 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
               </tip-box>
             </div>
             <div>
+              <div>
+                <panel header=":muscle: Exercises" type="info" expandable="">
+                  <div>
+                    <panel header=":lock::key: Which of these statements is true about the Dependency Inversion Principle.">
+                      <question>
+                        <p>Which of these statements is true about the Dependency Inversion Principle.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It can complicate the design/implementation by introducing extra abstractions, but it has some benefits.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is often used during testing, to replace dependencies with mocks.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It reduces dependencies in a design.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It advocates making higher level classes to depend on lower level classes.</li>
+                        </ul>
+                        <div slot="answer">
+                          <ul class="task-list">
+                            <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. It can complicate the design/implementation by introducing extra abstractions, but it has some benefits.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is often used during testing, to replace dependencies with mocks.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It reduces dependencies in a design.</li>
+                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It advocates making higher level classes to depend on lower level classes.</li>
+                          </ul>
+                          <p>Explanation: Replacing dependencies with mocks is Dependency Injection, not DIP. DIP does not reduce dependencies, rather, it changes the direction of dependencies. Yes, it can introduce extra abstractions but often the benefit
+                            can outweigh the extra complications.</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </panel>
+              </div>
               <div></div>
             </div>
           </div>
