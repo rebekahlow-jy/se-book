@@ -12,13 +12,19 @@
 <div id="app" class="container-fluid">
     <link rel="stylesheet" href="/se-book/css/textbook.css">
 <div class="website-content">
+  <tip-box>
+    <div>
+      <p>🏆 Can tag commits using Git <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
+    </div>
+  </tip-box>
   <div>
-    <tip-box type="success">
-      <div>
-        <p>🏆 Can tag commits using Git <img style="height: 1em;width: 1em;margin: 0 .05em 0 .1em;vertical-align: -0.1em;" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0033-20e3.png"></p>
-      </div>
-    </tip-box>
-    <p><span class="dimmed"><strong><span>Tools ➡️ Git and GitHub ➡️
+    <div>
+      <p>
+        <panel src="/se-book\revisionControl\savingHistory\full._include_.html" header=":mortar_board: %%Project Management &rarr; Revision Control &rarr; Saving History%%" isOpen="false" no-close="true" no-switch="true"></panel>
+      </p>
+    </div>
+    <p></p>
+    <p><span class="dimmed"><strong><span>Tools → Git and GitHub →
 </span></strong>
       </span>
     </p>
@@ -27,10 +33,7 @@
     </div>
     <div id="main">
       <div>
-        <p>
-          <panel src="/se-book\revisionControl\savingHistory\embed._include_.html" header="Revision Control: Saving History" is-open="" isOpen="false" no-close="true" no-switch="true"></panel>
-        </p>
-        <p></p>
+        <p>Let's tag a commit in a local repo you have (e.g. the <code>sampelrepo-things</code> repo)</p>
         <tabs>
           <tab header="SourceTree">
             <div>
@@ -39,6 +42,7 @@
               <p>The added tag will appear in the revision graph view.</p><img src="/se-book/gitAndGithub/tag/images/sourcetree_1.png" height="70">
               <p></p>
             </div>
+            <hr>
           </tab>
           <tab header="CLI">
             <div>
@@ -50,6 +54,7 @@
 </code></pre>
               <p>To learn how to add a tag to a past commit, go to the <a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">‘Git Basics – Tagging’ page of the git-scm book</a> and refer the ‘Tagging Later’ section.</p>
             </div>
+            <hr>
           </tab>
         </tabs>
       </div>

@@ -2,7 +2,7 @@
 
 <div class="website-content">
 
-<div id="path">Code Quality :arrow_right: Guideline: Follow a Standard :arrow_right:</div>
+<div id="path">Code Quality &rarr; Guideline: Follow a Standard &rarr;</div>
 
 <div id="title">
 
@@ -12,7 +12,7 @@
 
 <div id="body">
 
-{Some intermediate style rules for Java}
+Go through the [provided Java coding standard](https://github.com/oss-generic/process/blob/master/codingStandards/CodingStandard-Java.md) and learn the _intermediate_ style rules.
 
 </div>
 

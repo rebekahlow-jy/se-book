@@ -2,7 +2,7 @@
 
 <div class="website-content">
 
-<div id="path">Intellij IDEA :arrow_right: </div>
+<div id="path">Intellij IDEA &rarr; </div>
 
 <div id="title">
 
@@ -12,7 +12,14 @@
 
 <div id="body">
 
-...
+<div v-closeable alt="video: Intellij shortcuts">
+
+@[youtube](KsVWdGOnHZU)
+
+@[youtube](EvXpgL2iho4)
+
+
+</div>
 
 </div>
 

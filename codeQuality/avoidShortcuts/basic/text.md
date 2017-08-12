@@ -2,7 +2,7 @@
 
 <div class="website-content">
 
-<div id="path">Code Quality :arrow_right: Guideline: Avoid Unsafe Shortcuts :arrow_right:</div>
+<div id="path">Code Quality &rarr; Guideline: Avoid Unsafe Shortcuts &rarr;</div>
 
 <div id="title">
 
@@ -12,23 +12,19 @@
 
 <div id="body">
 
-<panel header="**Use the Default Branch**"
-    type="seamless" alt="indentation">
+<panel header="**Use the Default Branch**" type="seamless">
   <include src="../../practices/useDefaultBranch/index.md#main" />
 </panel>
 
-<panel header="**Don't Recycle Variables or Parameters**"
-    type="seamless" alt="indentation">
+<panel header="**Don't Recycle Variables or Parameters**" type="seamless">
   <include src="../../practices/dontRecycleVarsOrParams/index.md#main" />
 </panel>
 
-<panel header="**Avoid Empty Catch Blocks**"
-    type="seamless" alt="indentation">
+<panel header="**Avoid Empty Catch Blocks**" type="seamless">
   <include src="../../practices/avoidEmptyCatchBlocks/index.md#main" />
 </panel>
 
-<panel header="**Delete Dead Code**"
-    type="seamless" alt="indentation">
+<panel header="**Delete Dead Code**" type="seamless">
   <include src="../../practices/deleteDeadCode/index.md#main" />
 </panel>
 

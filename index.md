@@ -4,6 +4,13 @@
 
 ## Software Engineering for Self-Directed Learners
 
+### About this Book
+
+* [Acknowledgements](about/acknowledgements.html)
+* [How to use this book](about/usage.html)
+
+### Software Engineering
+
 <include src="softwareEngineering/topicToc.md" />
 
 ### Requirements
@@ -80,11 +87,11 @@
 
 <include src="principles/topicToc.md" />
 
-* [Definitions](common/definitions.html)
-* [References](common/references.html)
-* [Learning Outcomes](common/outcomes.html)
-* [Printable :scroll:](common/print.html)
+<include src="review/topicToc.md" />
 
-<include src="java/style/topicToc.md" />
+* [List of Definitions](common/definitions.html)
+* [List of References](common/references.html)
+* [List of Learning Outcomes](common/outcomes.html)
+* [Printable Version :scroll:](common/print.html)
 
 </div>

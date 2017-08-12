@@ -1,3 +1,27 @@
+<div id="cli">
+<popover id="pop:cli" placement="top">
+  <div slot="content">
+    <include src="definitions.md#def-cli" />
+  </div>
+</popover>
+</div>
+
+<div id="rcs">
+<popover id="pop:rcs" placement="top">
+  <div slot="content">
+    <include src="definitions.md#def-rcs" />
+  </div>
+</popover>
+</div>
+
+<div id="sut">
+<popover id="pop:sut" placement="top">
+  <div slot="content">
+    <include src="definitions.md#def-sut" />
+  </div>
+</popover>
+</div>
+
 <div id="xp">
 <popover id="pop:xp" title="eXtreme Programming (XP)">eXtreme Programming (XP)
 <div slot="content">

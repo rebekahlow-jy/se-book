@@ -2,7 +2,7 @@
 
 <div class="website-content">
 
-<div id="path">Principles :arrow_right: </div>
+<div id="path">Principles &rarr; </div>
 
 <div id="title">
 
@@ -18,7 +18,7 @@
 
 </tip-box>
 
-This principle guards against duplication of information. The functionality implemented twice is a violation of this principle even if the two implementations are different. Similarly, the value a system-wide timeout being defined in multiple places is a violation of DRY.
+This principle guards against duplication of information. The functionality implemented twice is a violation of the DRY principle even if the two implementations are different. Similarly, the value a system-wide timeout being defined in multiple places is a violation of DRY.
 
 </div>
 
